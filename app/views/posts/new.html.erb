@@ -1,8 +1,5 @@
-<%= form_with model: @post do |f| %>
-  <div class="field">
-    <div class="control">
-      <%= f.text_area :body, class:"textarea is-primary" %>
-    </div>
-  </div>
-  <%= f.button :submit, class: "button is-info" %>
-<% end %>
+<h1>New Post</h1>
+
+<%= render 'form', post: @post %>
+
+<%= link_to 'Back', posts_path %>

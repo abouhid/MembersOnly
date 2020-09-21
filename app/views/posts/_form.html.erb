@@ -1,0 +1,14 @@
+
+<%= simple_form_for(@post) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="field">
+    <div class="control">
+      <%= f.input :body, label: "Spill the tea...", input_html: {class: "textarea"}, wrapper: false, label_html: {class:"label"}, placeholder: "Your secrets are safe with us."%>
+
+    </div>
+  </div>
+  <%= f.button :submit, class: "button is-info" %>
+  
+<% end %>
