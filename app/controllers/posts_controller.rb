@@ -10,18 +10,15 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to root_path, notice: 'Tweet was successfully created.' }
-      else
-        format.html { render :new }
-      end
+    if @post.save
+      redirect_to root_path, notice: "Post created successfully."
+    else
+      render :new
     end
-
   end
+
   private
   def post_params
     params.require(:post).permit(:body)
   end
-
 end

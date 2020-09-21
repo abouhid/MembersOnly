@@ -55,6 +55,7 @@
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.9.0, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.13.1, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gravatar_image_tag (v1.2.0, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.5, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.10.1, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.2.1, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
