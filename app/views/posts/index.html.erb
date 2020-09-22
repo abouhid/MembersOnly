@@ -3,8 +3,9 @@
 <div class="column">
 <%= link_to 'New Post', new_post_path %><br />
 <%= link_to "Sign in", new_session_path(:user) %><br />
-
+<%if user_signed_in?%>
 <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+<%end%>
 </div>
 </div>
 
@@ -13,11 +14,6 @@
     <article class="media">
         <div class="media-left">
             <figure class="image is-64x64">
-                <%
-=begin%>
-                <%= gravatar_image_tag(tweeet.user.email, size: 64, alt: tweeet.user.name) %>
-                <%
-=end%>
             </figure>
         </div>
         <div class="media-content">
